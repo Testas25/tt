@@ -1,0 +1,36 @@
+auraterra/
+├── components/        # Reusable React components
+│   ├── Layout.js
+│   ├── Header.js
+│   ├── Footer.js
+│   ├── HeroSection.js
+│   ├── GalleryGrid.js
+│   ├── ImageModal.js
+│   ├── SoundscapePlayer.js
+│   ├── InteractiveArtCanvas.js
+│   └── ThemeSwitcher.js
+├── pages/             # Next.js pages (routes)
+│   ├── _app.js        # Global App component
+│   ├── _document.js   # Custom HTML document structure
+│   ├── index.js       # Homepage
+│   ├── gallery/
+│   │   ├── index.js   # Main gallery page
+│   │   └── [category].js # Dynamic routes for gallery categories
+│   ├── soundscapes.js
+│   ├── interactive.js
+│   ├── reflections/
+│   │   ├── index.js
+│   │   └── [slug].js  # Individual reflection/article
+│   └── about.js
+├── public/            # Static assets (images, videos, fonts)
+│   ├── images/
+│   ├── videos/
+│   └── fonts/
+├── styles/
+│   └── globals.css    # Global styles, Tailwind imports
+├── lib/               # Helper functions, API calls to CMS, data fetching
+│   ├── audioUtils.js
+│   ├── galleryData.js # Example: Local gallery data or CMS fetch functions
+│   └── theme.js       # Theme context logic
+├── tailwind.config.js # Tailwind CSS configuration
+└── next.config.js     # Next.js configuration
